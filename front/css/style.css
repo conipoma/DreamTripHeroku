@@ -1,0 +1,460 @@
+/* Body */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:600px) {
+    .tituloWeb {
+        font-size: 2em;
+        margin: 0 1.5rem;
+    }
+}
+
+/* Header */
+.sitioWeb {
+    background-color: #1D7DEF;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 0rem !important;  
+    padding-right: 1rem !important;
+  }
+  
+.tituloWeb {
+    font-family: 'Fredoka One', cursive;
+    text-align: left;
+    color: white;
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.nViajes {
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 2rem;
+    color:#1D7DEF;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* icono perfil y nombre usuario */
+.icono {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding-bottom: 0rem;
+}
+.icon {
+    width: 3em;
+    padding-right: 0rem;
+}
+
+#icono {
+    padding: 0.3rem;
+  }
+
+/* Nav desplegable */
+.nav nav-pills-usuario {
+    display: flex !important;
+    justify-content: right !important;
+}
+
+.nav-link dropdown-toggle {
+    color: white !important;
+    padding: 0rem !important;
+}
+
+.nav-item .dropdown {
+    padding-left: 6rem !important;
+    padding-left: 0rem; 
+}
+
+a {
+    color: white !important;
+}
+
+.nav-link {
+    padding: 0.3rem !important;
+    padding-bottom: 0rem !important;
+}
+
+#miCuenta {
+    padding: 2rem 1rem 0rem 0rem !important;
+}
+
+
+.miPerfilSecciones {
+    padding: 2rem 1rem 0rem 0rem !important;
+}
+
+
+/* NAVBAR */
+.bg-light {
+    background-color: #1D7DEF !important;
+}
+
+.navbar-light .navbar-brand {
+    padding-right: 40px;
+}
+
+.nav-item {
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+/* item MENU */
+.navbar-light .navbar-brand {
+    color: white;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+
+/* items secciones */
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Registro.html */
+.bienvenidos {
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 4rem;
+    color: rgb(76, 75, 75);
+    padding-bottom: 3rem;
+}
+
+.botonRegistro {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+.btn-primary {
+    background-color: #56baed !important;
+    border-color:#56baed !important;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1D7DEF !important;
+    transition: background-color 0.5s;   
+}
+
+/* CARUSEL */
+::-webkit-scrollbar {
+    background: #d4d4d4;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* CARUSEL */
+::-webkit-scrollbar {
+    background: #d4d4d4;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Carousel */
+#carousel {
+    width: 100%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.carousel {
+    overflow-x: scroll;
+}
+
+#carousel .gallery {
+    display: flex;
+    flex-direction: row;
+    width: 2500px;
+    height: 30vh;
+}
+
+#carousel .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+}
+
+#carousel .item:hover {
+    flex: 8%;
+}
+
+/*imágenes carrusel*/
+#carousel .item-1 {
+    background-image: url('../img/1.jpg');
+}
+
+#carousel .item-2 {
+    background-image: url('../img/2.jpg');
+}
+
+#carousel .item-3 {
+    background-image: url('../img/3.jpg');
+}
+
+#carousel .item-4 {
+    background-image: url('../img/4.jpg');
+}
+
+#carousel .item-5 {
+    background-image: url('../img/5.jpg');
+}
+
+#carousel .item-6 {
+    background-image: url('../img/6.jpg');
+}
+
+#carousel .item-7 {
+    background-image: url('../img/7.jpg');
+}
+
+#carousel .item-8 {
+    background-image: url('../img/8.jpg');
+}
+
+#carousel .item-9 {
+    background-image: url('../img/9.jpg')
+}
+
+#carousel .item-10 {
+    background-image: url('../img/10.jpg');
+}
+
+#carousel .item-11 {
+    background-image: url('../img/11.jpg');
+}
+
+#carousel .item-12 {
+    background-image: url('../img/12.jpg');
+}
+
+#carousel .item-13 {
+    background-image: url('../img/13.jpg');
+}
+
+#carousel .item-14 {
+    background-image: url('../img/14.jpg');
+}
+
+.gallery .item:hover {
+    cursor: pointer;
+}
+
+.pIndex {
+    color: #134A73;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Cards trip */
+#cards-trip {
+    margin: 20px;
+    background-image: url(../img/travel.jpg);
+}
+
+#destino {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.7rem;
+    color: #1D7DEF;
+}
+
+.iconoCard {
+    height: 120px;
+    padding-bottom: 30px;
+}
+
+.divCard {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* Formulario para armar viajes */
+.armandoMiViaje {
+    font-size: 1.8rem;
+    color: #1D7DEF;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 2rem;
+}
+
+.formulario-bg {
+    background-image: url(../img/travel.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #5fa0f0;
+    padding: 5rem 5rem 2rem 5rem ;
+}
+
+.formulario {
+    background-color: #ffffff;
+    margin: -5rem auto 0 auto;
+    width: 80%;
+    padding: 2rem 2rem 2rem 2rem ;
+    font-size: 1.2rem;
+    color: #1D7DEF;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.campo {
+    border: 2px solid #1D7DEF;
+    font-size: 1.2rem;
+}
+
+@media (max-width:700px) {
+    .formulario-bg {
+        height: 25rem;
+    }
+}
+
+@media (max-width:700px) {
+    .formulario {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:700px) {
+    .campo {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width:700px) {
+    .btn-primary {
+        margin: auto 2.7rem;
+    }
+}
+
+.botonArmarViaje {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12rem;
+    padding-top: 2rem;
+}
+
+/* Buscar viaje */
+.botonBuscarViaje {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.buscarViaje {
+    font-size: 1.8rem;
+    color: #1D7DEF;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 2rem;
+}
+
+.buscar {
+    background-image: url(../img/fondoBuscarViaje.png);
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+/* Footer */
+.card {
+    padding-top: 3rem;
+    margin: 1rem;
+}
+
+.card-header {
+    background-color: transparent;
+    color: #000000;
+}
+
+.card-body img {
+    width: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* mis viajes perfil*/
+.viaje {
+    background-color: #1D7DEF;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+}
+
+.data-name {
+    color: #CCE5FC;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.data-value {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-item {
+    margin-bottom: 0.5rem;
+}
