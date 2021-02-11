@@ -114,7 +114,6 @@ app.use('/admin', viajeRouter);
 
 app.use(express.static("front"));
 
-
 // PORT heroku
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`); 
