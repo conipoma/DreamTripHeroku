@@ -112,6 +112,8 @@ app.use('/admin', viajeRouter);
 // app.use(express.static(path.parse(__dirname).dir + '/front'));
 
 
+
+
 // chequeamos que nos esté escuchando
 app.listen(8080, () => {
     console.log('escuchando en el puerto 8080');
