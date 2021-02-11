@@ -4,6 +4,7 @@ const express = require('express');
 const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 const path = require('path');
+const PORT = process.env.PORT || 3000;
 
 // Ejecutamos el servidor
 const app = express();
@@ -111,7 +112,13 @@ app.use('/admin', viajeRouter);
 // Envio de Front end - con esto logramos enviarle al usuario todo el front.
 // app.use(express.static(path.parse(__dirname).dir + '/front'));
 
+app.use(express.static("front"));
 
+
+// PORT heroku
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}.`); 
+})
 
 
 // chequeamos que nos esté escuchando
