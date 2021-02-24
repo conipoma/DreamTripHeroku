@@ -26,7 +26,7 @@ function registroUsuario() {
     if (nombre === "" || apellido === "" || email === "" || telefono === "" || ciudad === "" || pais === "" || contraseña === "") {
         alert("Debes completar todos los campos");
     } else {
-        axios.post("http://localhost:8080/admin/registro", {
+        axios.post("https://dreamtripapp.herokuapp.com/admin/registro", {
             nombre_usuario: nombre,
             apellido_usuario: apellido,
             email_usuario: email,
@@ -36,11 +36,13 @@ function registroUsuario() {
             password_usuario: contraseña
         });
         alert("¡Registro finalizado!");
-        window.location = "login.html";
     }
 }
 
 document.querySelector('#form-login').addEventListener('submit', ingresoUsuario)
+// window.location = "login.html";
+
+
 
 // Ingreso Usuario
 function ingresoUsuario (e) {
@@ -52,18 +54,18 @@ function ingresoUsuario (e) {
     console.log(`El usuario es ${usuario} y su contraseña es ${contrasenia}`)
 
 
-    axios.post("http://localhost:8080/login", {
+    axios.post("https://dreamtripapp.herokuapp.com/login", {
         email_usuario: usuario,
         password_usuario: contrasenia
     })
     
     .then((response)=>{
-        // alert(response);
+        console.log(response);
         console.log(response.data.condicion)
 
         if (response.data.condicion === false) {
 
-            alert('¡Usuario o contraseñaincorrecta!')
+            alert('¡Usuario o contraseña incorrecta!')
             window.location='login.html'
 
         } else {
@@ -72,7 +74,7 @@ function ingresoUsuario (e) {
         }
     })
     .catch((error) => {
-        // window.location='login.html'
+        window.location='login.html'
 
     })
 
